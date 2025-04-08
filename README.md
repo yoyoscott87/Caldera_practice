@@ -24,7 +24,9 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 
 攻擊條件 : 目標機器運行PsExec.exe在指定目錄下(ex:/Temp)，確保端口(135, 139, 445) 開啟
 
-執行command : cd C:\Users\Public\Temp\ ; .\PsExec.exe -i -s cmd /c "echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt"
+執行command : 
+
+cd C:\Users\Public\Temp\ ; .\PsExec.exe -i -s cmd /c "echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt"
 
 
 ### 1.3 Command Analysis
