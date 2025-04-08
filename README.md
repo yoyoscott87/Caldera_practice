@@ -25,3 +25,32 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 攻擊條件 : 目標機器運行PsExec.exe在指定目錄下(ex:/Temp)，確保端口(135, 139, 445) 開啟
 
 執行command : cd C:\Users\Public\Temp\ ; .\PsExec.exe -i -s cmd /c "echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt"
+
+
+### 1.3 Command Analysis
+
+cd C:\Users\Public\Temp\ : 將工作目錄切到Temp
+
+
+.\PsExec.exe : 執行 PsExec.exe，也是這個攻擊最主要的手段
+
+
+-i -s  :  是 PsExec.exe 的指令
+
+
++ -i 使命令在指定的用戶會話中運行，允許交互式操作。
+
+
++ -s 使命令以系統帳戶運行，這是一個具有最高權限的帳戶，通常用於系統級操作。
+
+
+cmd /c : cmd 是 Windows 命令提示字元，/c 參數表示執行後面的命令並退出。這裡會執行一個後續命令。
+
+
+"echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt" : 
+
+
++ 這條命令會將字串 "This machine was hacked." 輸出並寫入到 C:\Users\99053\Desktop\hack.txt 文件中。
+
+
++ echo 用來輸出文本，> 用來將輸出重定向到指定文件。
