@@ -43,13 +43,13 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
   - -s 使命令以系統帳戶運行，這是一個具有最高權限的帳戶，通常用於系統級操作。
 
 
-cmd /c : cmd 是 Windows 命令提示字元，/c 參數表示執行後面的命令並退出。這裡會執行一個後續命令。
+- **`cmd /c`** : cmd 是 Windows 命令提示字元，/c 參數表示執行後面的命令並退出。這裡會執行一個後續命令。
 
 
-"echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt" : 
+- **`"echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt"`** : 
 
 
-+ 這條命令會將字串 "This machine was hacked." 輸出並寫入到 C:\Users\99053\Desktop\hack.txt 文件中。
+  - 這條命令會將字串 "This machine was hacked." 輸出並寫入到 C:\Users\99053\Desktop\hack.txt 文件中。
 
 
-+ echo 用來輸出文本，> 用來將輸出重定向到指定文件。
+  - echo 用來輸出文本，> 用來將輸出重定向到指定文件。
