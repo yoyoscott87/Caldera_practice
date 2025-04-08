@@ -35,7 +35,7 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 - **`.\PsExec.exe`** : 執行 PsExec.exe，也是這個攻擊最主要的手段
 
 
--**`-i -s`** :  是 PsExec.exe 的指令
+- **`-i -s`** :  是 PsExec.exe 的指令
 
 + -i 使命令在指定的用戶會話中運行，允許交互式操作。
 
