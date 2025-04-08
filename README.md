@@ -29,7 +29,7 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 
 ### 1.3 Command Analysis
 
-cd C:\Users\Public\Temp\ : 將工作目錄切到Temp
+**cd C:\Users\Public\Temp\** : 將工作目錄切到Temp
 
 
 .\PsExec.exe : 執行 PsExec.exe，也是這個攻擊最主要的手段
