@@ -10,10 +10,18 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
   	在紅隊演練中和真實攻擊中，PsExec 常被用於
 
    
-  + [橫向移動 : 從一台已被控制的主機向其他主機部署惡意程式]
+  + 橫向移動 : 從一台已被控制的主機向其他主機部署惡意程式
 
   
-  權限升級 : 藉由系統權限執行程式已取得更高存取權
+  + 權限升級 : 藉由系統權限執行程式已取得更高存取權
 
   
-  後門 : 在目標系統上執行後門或安裝其他攻擊工具。
+  + 後門 : 在目標系統上執行後門或安裝其他攻擊工具。
+### 1.2 Environment Configuration and Requirements
+攻擊端 : 使用wsl執行caldera
+
+目標機器 : VMware建立的windows10
+
+攻擊條件 : 目標機器運行PsExec.exe在指定目錄下(ex:/Temp)，確保端口(135, 139, 445) 開啟
+
+執行command : cd C:\Users\Public\Temp\ ; .\PsExec.exe -i -s cmd /c "echo This machine was hacked. > C:\Users\99053\Desktop\hack.txt"
