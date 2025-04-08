@@ -53,3 +53,5 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 
 
   - echo 用來輸出文本，> 用來將輸出重定向到指定文件。
+ 
+目標 : 這個指令的目的是使用 PsExec.exe 以系統權限在 cmd 中執行命令，並將 "This machine was hacked." 這段文字寫入到C:\Users\99053\Desktop\hack.txt 文件中。
