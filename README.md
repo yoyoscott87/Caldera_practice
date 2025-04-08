@@ -32,13 +32,12 @@ Caldera 是一個由 MITRE 開發的自動化紅隊（Red Team）和藍隊（Blu
 - **`cd C:\Users\Public\Temp\`**：將工作目錄切到 Temp
 
 
-.\PsExec.exe : 執行 PsExec.exe，也是這個攻擊最主要的手段
+- **`.\PsExec.exe`** : 執行 PsExec.exe，也是這個攻擊最主要的手段
 
 
--i -s  :  是 PsExec.exe 的指令
+-**`-i -s`** :  是 PsExec.exe 的指令
 
-
-- -i 使命令在指定的用戶會話中運行，允許交互式操作。
++ -i 使命令在指定的用戶會話中運行，允許交互式操作。
 
 
 + -s 使命令以系統帳戶運行，這是一個具有最高權限的帳戶，通常用於系統級操作。
